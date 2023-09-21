@@ -13,6 +13,7 @@ from aiogram.filters.callback_data import CallbackData
 class MainBot:
     def __init__(self, token=API) -> None:
         self.__dp = Dispatcher()
+        print('Hello')
         self.__bt = Bot(token=token)
         ls_btn = ["Toshkent","Andijon","Samarqand","Buxoro","Farg'ona","Xorazm","Namangan","Jizzax"]
         box = InlineKeyboardBuilder()
